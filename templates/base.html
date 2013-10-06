@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Med Medical App</title>
+    <link href="../static/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-static-top navbar-inverse">
+        <a href="#" class="navbar-brand" style="width: 100%; text-align: center">The Med App</a>
+    </div>
+    {% block carousel %}
+    {% endblock %}
+    <div class="container col-lg-offset-3">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
