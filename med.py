@@ -45,7 +45,8 @@ def sms_message(sms_message=""):
                 sms_message = generate_message(health_centers, sms_message)
                 send_sms_message(sms_message)
                 save_condition()
-                return sms_message
+            return render_template('index.html', message="SMS sent", health_centers_found=sms_message)
+
 
         if 'labour' or 'delivery' or 'deliver' in str(request.form['message']).lower():
             health_centers = HealthCenter.objects(level__gte=3)
