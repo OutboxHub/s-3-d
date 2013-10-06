@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from mongoengine import connect
-from models import HealthCenter
+from models import HealthCenter, IncomingPatient
 from twilio.rest import *
 
 __author__ = 'dolel'
@@ -31,6 +31,11 @@ def generate_message(health_centers, sms_message):
     return sms_message
 
 
+def save_condition():
+    incoming_health = IncomingPatient(condition_and_location=request.form['message'])
+    incoming_health.save()
+
+
 @app.route('/sms_message', methods=['GET', 'POST'])
 def sms_message(sms_message=""):
     if request.method == "POST":
@@ -39,6 +44,7 @@ def sms_message(sms_message=""):
             if health_centers.count() >= 0:
                 sms_message = generate_message(health_centers, sms_message)
                 send_sms_message(sms_message)
+                save_condition()
                 return sms_message
 
         if 'labour' or 'delivery' or 'deliver' in str(request.form['message']).lower():
@@ -46,9 +52,16 @@ def sms_message(sms_message=""):
             if health_centers.count() >= 0:
                 sms_message = generate_message(health_centers, sms_message)
                 send_sms_message(sms_message)
+            save_condition()
             return render_template('index.html', message="SMS sent", health_centers_found=sms_message)
 
     return render_template("index.html")
+
+
+@app.route('/incoming_patient')
+def incoming():
+    return render_template("incoming_patient.html", patients=IncomingPatient.objects())
+
 
 @app.route('/add_health_center', methods=['GET', 'POST'])
 def add_health_center():

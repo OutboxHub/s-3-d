@@ -4,11 +4,12 @@
     <list default="true" id="92f838fb-66ff-42ea-a193-e74a9b571715" name="Default" comment="" />
     <ignored path="outbox_hack.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/med.py" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381054997777" ignored="false" />
-    <file path="/index.html" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381055875438" ignored="false" />
-    <file path="/base.html" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381055893076" ignored="false" />
-    <file path="/models.py" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381047382662" ignored="false" />
+    <file path="/med.py" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381059965740" ignored="false" />
+    <file path="/index.html" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381057021952" ignored="false" />
+    <file path="/base.html" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381060487926" ignored="false" />
+    <file path="/models.py" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381059403658" ignored="false" />
     <file path="/add_health_center.html" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381053446315" ignored="false" />
+    <file path="/incoming_patient.html" changelist="92f838fb-66ff-42ea-a193-e74a9b571715" time="1381060189569" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +32,21 @@
       <file leaf-file-name="med.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/med.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="75" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0">
+            <state line="62" column="82" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="incoming_patient.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/incoming_patient.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="46" selection-start="247" selection-end="247" vertical-scroll-proportion="-3.6538463">
+              <folding>
+                <element signature="n#style#0;n#legend#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,7 +55,7 @@
       <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="330" selection-end="330" vertical-scroll-proportion="0.4607046">
+            <state line="9" column="90" selection-start="347" selection-end="347" vertical-scroll-proportion="0.15178572">
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -50,10 +63,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="carousel.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/carousel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="11" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="46" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+            <state line="14" column="70" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,19 +104,10 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="17" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.65384614">
+            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.65384614">
               <folding>
-                <element signature="n#style#0;n#legend#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#legend#0;n#form#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carousel.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/carousel.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="1" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -109,11 +122,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/templates/add_health_center.html" />
-        <option value="$PROJECT_DIR$/med.py" />
-        <option value="$PROJECT_DIR$/static/carousel.css" />
+        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/med.py" />
+        <option value="$PROJECT_DIR$/templates/incoming_patient.html" />
+        <option value="$PROJECT_DIR$/static/carousel.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
@@ -318,11 +332,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25334382" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25334382" sideWeight="0.6752" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -401,9 +415,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
+    <entry file="file://$PROJECT_DIR$/static/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/twilio/rest/resources/sms_messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="8" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -415,10 +436,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.65384614">
+          <folding>
+            <element signature="n#style#0;n#legend#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="70" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/med.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="82" selection-start="2187" selection-end="2187" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,41 +470,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/twilio/rest/resources/sms_messages.py">
+    <entry file="file://$PROJECT_DIR$/templates/incoming_patient.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="8" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/med.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="75" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.0">
+        <state line="6" column="46" selection-start="247" selection-end="247" vertical-scroll-proportion="-3.6538463">
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="n#style#0;n#legend#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="1" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.0">
+        <state line="38" column="11" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.65384614">
-          <folding>
-            <element signature="n#style#0;n#legend#0;n#form#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="330" selection-end="330" vertical-scroll-proportion="0.4607046">
+        <state line="9" column="90" selection-start="347" selection-end="347" vertical-scroll-proportion="0.15178572">
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

@@ -3,13 +3,32 @@
 <head>
     <title>The Med Medical App</title>
     <link href="../static/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/carousel.css">
 </head>
 <body>
     <div class="navbar navbar-static-top navbar-inverse">
-        <a href="#" class="navbar-brand" style="width: 100%; text-align: center">The Med App</a>
+        <a href="#" class="navbar-brand" style="width: 100%; text-align: center">The S-3-D App</a>
     </div>
-    {% block carousel %}
-    {% endblock %}
+
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>S-3-D</h1>
+              <p>Enabling Pregnant Women and Mothers find the nearest functioning health center and receive timely medical antention.</p>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
     <div class="container col-lg-offset-3">
         {% block body %}
         {% endblock %}
